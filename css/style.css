@@ -1,0 +1,220 @@
+
+
+/* Set default margin and padding */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Exo:ital,wght@0,600;1,600&display=swap');
+* {
+    margin: 5px; /* Set a default margin of 5 pixels for all elements */
+    padding: 5px; /* Set a default padding of 5 pixels for all elements */
+   
+  }
+  
+  body {
+    background-color: #03b6ec; /* Set the background color of the body to #03b6ec */
+    box-sizing: border-box;/* Include padding and border in the element's total width and height */
+    font-family: 'Exo 2', sans-serif; /* Set the font family of the body to 'Exo 2' and sans-serif as fallback */
+
+  }
+  
+  .container {
+    max-width: 800px; /* Set the maximum width of the container to 800 pixels */
+    margin: 0 auto; /* Center align the container horizontally by setting left and right margin to 'auto' */
+    padding: 20px; /* Add 20 pixels of padding to the container */
+  }
+ 
+  .start_btn,
+  .quiz_box,
+  .result_box {
+    display: none;/* Initially hide the elements with class start_btn, quiz_box, and result_box */
+
+  }
+  
+  .start_btn
+  .info_box,
+  .quiz_box,
+  .result_box {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .info_box {
+    text-align: center;
+  }
+  
+  .info-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .info-list {
+    margin-bottom: 20px;
+  }
+  
+  .info {
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button.quit {
+    background-color: #f44336;
+  }
+  
+  .quiz_box header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .timer {
+    display: flex;
+    align-items: center;
+    color: #333;
+  }
+  
+  .timer_sec {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .time_line {
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .time_line:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #4CAF50;
+    animation: timer_animation 15s linear;
+  }
+  
+  .que_text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .option_list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option_list button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .next_btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .result_box {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .icon {
+    color: #4CAF50;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .complete_text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .score_text {
+    margin-bottom: 20px;
+  }
+  
+  .result_display h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .result_display form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .result_display .score_text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .result_display .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .result_display label {
+    font-size: 18px;
+  }
+  
+  .result_display input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .result_display .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  @keyframes timer_animation {
+    /* Defines the animation called 'timer_animation' */
+    
+    0% {
+        /* At the beginning of the animation (0% progress) */
+        width: 100%; /* Set the width of the element to 100% */
+    }
+    
+    100% {
+        /* At the end of the animation (100% progress) */
+        width: 0%; /* Set the width of the element to 0% */
+    }
+}
+  
+  

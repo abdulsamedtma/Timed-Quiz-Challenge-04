@@ -19,12 +19,14 @@ Firstly, it provides a platform for individuals to learn, practice, and reinforc
  Congratulations! You have successfully launched the Javascript Timed Quiz.
 
 
-![Alt text](../../Pictures/Screenshots/display.png)
-
-![Alt text](../../Pictures/Screenshots/startwork.png)
+![Alt text](css/images/Display.png)
 
 
-![Alt text](../../Pictures/Screenshots/quizscore.png)
+
+![Alt text](css/images/startWork.png)
+
+
+![Alt text](css/images/quizscore.png)
 
 
 ## Usage
